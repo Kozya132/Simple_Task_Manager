@@ -1,0 +1,9 @@
+Async PostgreSQL migrations for Todo-Tracker.
+
+From the project root, activate .venv and run:
+  python -m alembic upgrade head
+  python -m alembic revision --autogenerate -m "describe schema change"
+  python -m alembic check
+
+Configuration comes from the project-local .env (TODO_TRACKER_DATABASE_URL).
+See ../README.md for Docker commands and migration verification.
